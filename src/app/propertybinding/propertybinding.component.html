@@ -1,1 +1,18 @@
 <h1>propertybinding works!</h1>
+<h1>{{name}}</h1>
+<h1>{{age}}</h1>
+<h1>{{names[1]}}</h1>
+<h1>{{students[1].name}} {{students[1].age}} {{students[1].rollno}}</h1>
+<h1>{{40+50}}</h1>
+<h1>{{!isnumber}}</h1>
+<h1>{{cusnumber>=60}}</h1>
+
+<h1>if condition</h1>
+
+<h1 *ngIf="!cusnumber1"> this is heading for ngif</h1>
+<h1 *ngIf="numb>numb1"> this is heading for ngif</h1>
+<div class="first" [ngClass]="'second third'"> this is class binding</div>
+<div class="first" [ngClass]="['second','third']"> this is class binding</div>
+<div class="first" [ngClass]="{'second':true,'third':true}"> this is class binding</div>
+<div class="fourth" [ngClass]="{'fifth':feepadi}"> this is class binding</div>
+

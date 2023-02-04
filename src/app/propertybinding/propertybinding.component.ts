@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./propertybinding.component.scss']
 })
 export class PropertybindingComponent {
+  mydata: any;
 
 name="ravi singh";
 age:number=90;
@@ -29,7 +30,7 @@ students=[
     age:30,
     rollno:3
   }
-]
+];
 isnumber:boolean=true;
 cusnumber:number=2;
 cusnumber1:boolean=false;
@@ -37,8 +38,5 @@ numb:number=50;
 numb1:number=80;
 
 feepadi:boolean=false;
-
-
-
 
 }

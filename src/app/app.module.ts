@@ -16,6 +16,9 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatCommonModule} from '@angular/material/core';
 import { PropertybindingComponent } from './propertybinding/propertybinding.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { MypageComponent } from './mypage/mypage.component';
+import { CustompipePipe } from './modules/custompipe.pipe';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -27,7 +30,9 @@ import { WelcomeComponent } from './welcome/welcome.component';
     NgbootstrappageComponent,
     MetrialpageComponent,
     PropertybindingComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    MypageComponent,
+    CustompipePipe
   ],
   imports: [
     BrowserModule,
@@ -37,7 +42,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
     MatButtonModule,
     MatCardModule,
     MatDatepickerModule,
-    MatCommonModule
+    MatCommonModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
+import { MypageComponent } from './mypage/mypage.component';
 import { PropertybindingComponent } from './propertybinding/propertybinding.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 
@@ -12,6 +13,10 @@ const routes: Routes = [
   {
     path:'binding',
     component:PropertybindingComponent
+  },
+  {
+    path:'page',
+    component:MypageComponent
   }
 ];
 

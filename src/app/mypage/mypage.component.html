@@ -1,0 +1,29 @@
+<h1>angular pipe</h1>
+<h2>{{mytext | lowercase}}</h2>
+<h2>{{mytext | uppercase}}</h2>
+<h2>{{mytext | titlecase}}</h2>
+<h2>{{mydate | date}}</h2>
+<h2>{{mydate | date:'medium'}}</h2>
+<h2>{{mydate | date:'shortTime'}}</h2>
+<h2>{{mydate | date:'h:m:s'}}</h2>
+<h2>{{mydate | date:'H:m:s'}}</h2>
+<h1>{{price | currency}}</h1>
+<h1>{{price | currency:'INR'}}</h1>
+<h1>{{price | currency:'INR':'code'}}</h1>
+<h1>{{marks | percent}}</h1>
+<hr color="red" size="10">
+
+<input type="text" [(ngModel)]=myvalue />
+{{myvalue}}
+<div [ngSwitch]="myvalue">
+    <section [ngClass]="'first'" *ngSwitchCase="10">{{myvalue}}</section>
+    <section [ngClass]="'first'" *ngSwitchCase="50">{{myvalue}}</section>
+    <section [ngClass]="'first'" *ngSwitchCase="60">{{myvalue}}</section>
+    <section [ngClass]="'first'" *ngSwitchCase="70">{{myvalue}}</section>
+    <section [ngClass]="'first'" *ngSwitchCase="80">{{myvalue}}</section>
+    <section [ngClass]="'first'" *ngSwitchDefault="no match data in list">this is default case</section>
+    
+</div>
+
+
+

@@ -19,6 +19,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { MypageComponent } from './mypage/mypage.component';
 import { CustompipePipe } from './modules/custompipe.pipe';
 import { FormsModule } from '@angular/forms';
+import { SimpleformComponent } from './modules/sales/simpleform/simpleform.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { FormsModule } from '@angular/forms';
     PropertybindingComponent,
     WelcomeComponent,
     MypageComponent,
-    CustompipePipe
+    CustompipePipe,
+    SimpleformComponent
   ],
   imports: [
     BrowserModule,

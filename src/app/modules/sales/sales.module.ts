@@ -3,14 +3,19 @@ import { CommonModule } from '@angular/common';
 
 import { SalesRoutingModule } from './sales-routing.module';
 import { FormsModule } from '@angular/forms';
+import { MyreactiveComponent } from './myreactive/myreactive.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    MyreactiveComponent
+  ],
   imports: [
     CommonModule,
     SalesRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class SalesModule { }

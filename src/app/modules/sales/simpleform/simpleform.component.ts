@@ -8,7 +8,13 @@ import { NgForm } from '@angular/forms';
 })
 export class SimpleformComponent {
 
-myobject:any;
+
+
+mysubmit(xyz:NgForm):void
+{
+console.log(xyz.value);
+
+}
 
 
 

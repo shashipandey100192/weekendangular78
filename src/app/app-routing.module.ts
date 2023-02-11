@@ -19,7 +19,7 @@ const routes: Routes = [
     component:MypageComponent
   },
   {
-    path:'myform',
+    path:'sales',
     loadChildren:()=> import('./modules/sales/sales.module').then(m => m.SalesModule)
   }
 ];

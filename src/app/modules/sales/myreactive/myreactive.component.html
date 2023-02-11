@@ -1,24 +1,24 @@
-<h1>Bootstrap form</h1>
+<h1>Bootstrap form Reactive form design</h1>
 <a [routerLink]="['/']">Back to home</a>
 <div class="container">
     <div class="row">
         <div class="6 border bg-light shadow p-5">
-            <form #myform="ngForm" (ngSubmit)="mysubmit(myform)">
+            <form [formGroupName]="Myform">
                 <div class="mb-3">
                     <label class="form-label">Username</label>
-                    <input type="text" class="form-control" ngModel name="name" required>
+                    <input type="text" class="form-control" name="name" required formControlName="user">
                   </div>
                   <div class="mb-3">
                     <label class="form-label">Phone No</label>
-                    <input type="text" class="form-control" ngModel name="phone" required pattern="[0-9]{10}">
+                    <input type="text" class="form-control" name="phone" required pattern="[0-9]{10}" formControlName="phone">
                   </div>
                 <div class="mb-3">
                   <label  class="form-label">Email address</label>
-                  <input type="email" class="form-control" ngModel name="address" required >
+                  <input type="email" class="form-control" name="address" required formControlName="email">
                 </div>
                 <div class="mb-3">
                   <label class="form-label">Password</label>
-                  <input type="password" class="form-control" ngModel name="pass" required>
+                  <input type="password" class="form-control" name="pass" required formControlName="pass">
                 </div>
                 <div class="mb-3 form-check">
                   <input type="checkbox" class="form-check-input" >

@@ -3,7 +3,7 @@
 <div class="container">
     <div class="row">
         <div class="6 border bg-light shadow p-5">
-            <form [formGroupName]="Myform">
+            <form [formGroup]="myform" (ngSubmit)="mysubmit()">
                 <div class="mb-3">
                     <label class="form-label">Username</label>
                     <input type="text" class="form-control" name="name" required formControlName="user">

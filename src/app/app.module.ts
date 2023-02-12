@@ -20,6 +20,7 @@ import { MypageComponent } from './mypage/mypage.component';
 import { CustompipePipe } from './modules/custompipe.pipe';
 import { FormsModule } from '@angular/forms';
 import { SimpleformComponent } from './modules/sales/simpleform/simpleform.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { SimpleformComponent } from './modules/sales/simpleform/simpleform.compo
     MatCardModule,
     MatDatepickerModule,
     MatCommonModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

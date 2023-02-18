@@ -6,7 +6,23 @@
             <form [formGroup]="myform" (ngSubmit)="mysubmit()">
                 <div class="mb-3">
                     <label class="form-label">Username</label>
-                    <input type="text" class="form-control" name="name" required formControlName="user">
+                    <input type="text" class="form-control" name="name" required formControlName="username">
+                    
+                    <div *ngIf="submitted && f.username.errors" class="errormsg">
+                          <div *ngIf="f.username.errors.required">Username is required</div>
+
+                          <div *ngIf="f.username.errors.minlength">
+                            Username must be at least 5 characters
+                          </div>
+
+                          <div *ngIf="f.username.errors.maxlength">
+                            Username must not exceed 10 characters
+                          </div>
+                    </div>
+  
+
+
+
                   </div>
                   <div class="mb-3">
                     <label class="form-label">Phone No</label>
